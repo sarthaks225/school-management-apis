@@ -1,1 +1,1 @@
-# school-management-apis
+# school-management-api
