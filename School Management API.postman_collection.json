@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Greenwood High\",\r\n  \"address\": \"123 Main St\",\r\n  \"latitude\": 12.9716,\r\n  \"longitude\": 77.5946\r\n}",
+					"raw": "{\r\n  \"name\": \"Macro Vision Academy \",\r\n  \"address\": \"burhanpur\",\r\n  \"latitude\": 10.9716,\r\n  \"longitude\": 70.5946\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,13 +21,12 @@
 					}
 				},
 				"url": {
-					"raw": "https://diligent-blessing-production.up.railway.app/api/addSchool",
+					"raw": "https://school-management-apis-mpsa.onrender.com/api/addSchool",
 					"protocol": "https",
 					"host": [
-						"diligent-blessing-production",
-						"up",
-						"railway",
-						"app"
+						"school-management-apis-mpsa",
+						"onrender",
+						"com"
 					],
 					"path": [
 						"api",
@@ -112,18 +111,17 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "List Schools",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://diligent-blessing-production.up.railway.app/api/listSchools?latitude=12.9716&longitude=77.5946.",
+					"raw": "https://school-management-apis-mpsa.onrender.com/api/listSchools?latitude=12.9716&longitude=77.5946.",
 					"protocol": "https",
 					"host": [
-						"diligent-blessing-production",
-						"up",
-						"railway",
-						"app"
+						"school-management-apis-mpsa",
+						"onrender",
+						"com"
 					],
 					"path": [
 						"api",
