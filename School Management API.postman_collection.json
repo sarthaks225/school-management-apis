@@ -1,117 +1,13 @@
 {
 	"info": {
-		"_postman_id": "94260f55-2934-4f0c-aa5e-88d7ca1dc19c",
-		"name": "School Management API",
+		"_postman_id": "4bf75566-313c-450b-a338-4da0d0106616",
+		"name": "school-management-apis",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "42932446"
 	},
 	"item": [
 		{
-			"name": "Add School",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"Macro Vision Academy \",\r\n  \"address\": \"burhanpur\",\r\n  \"latitude\": 10.9716,\r\n  \"longitude\": 70.5946\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://school-management-apis-mpsa.onrender.com/api/addSchool",
-					"protocol": "https",
-					"host": [
-						"school-management-apis-mpsa",
-						"onrender",
-						"com"
-					],
-					"path": [
-						"api",
-						"addSchool"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "New Request",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Greenwood High\",\r\n  \"address\": \"123 Main St\",\r\n  \"latitude\": 12.9716,\r\n  \"longitude\": 77.5946\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://diligent-blessing-production.up.railway.app/api/addSchool",
-							"protocol": "https",
-							"host": [
-								"diligent-blessing-production",
-								"up",
-								"railway",
-								"app"
-							],
-							"path": [
-								"api",
-								"addSchool"
-							]
-						}
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "Content-Length",
-							"value": "46"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 07 Mar 2025 19:19:18 GMT"
-						},
-						{
-							"key": "Etag",
-							"value": "W/\"2e-gcaky0PJvGe6drd2H+be/8b4+GA\""
-						},
-						{
-							"key": "Server",
-							"value": "railway-edge"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "X-Railway-Edge",
-							"value": "railway/europe-west4-drams3a"
-						},
-						{
-							"key": "X-Railway-Request-Id",
-							"value": "EcFVnoTZS9uGNiA_xgPnrg_1655129934"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"message\": \"School added successfully\",\n    \"id\": 3\n}"
-				}
-			]
-		},
-		{
-			"name": "List Schools",
+			"name": "list schools",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -139,82 +35,37 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"name": "New Request",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://diligent-blessing-production.up.railway.app/api/listSchools?latitude=19.9716&longitude=77.5946",
-							"protocol": "https",
-							"host": [
-								"diligent-blessing-production",
-								"up",
-								"railway",
-								"app"
-							],
-							"path": [
-								"api",
-								"listSchools"
-							],
-							"query": [
-								{
-									"key": "latitude",
-									"value": "19.9716"
-								},
-								{
-									"key": "longitude",
-									"value": "77.5946"
-								}
-							]
+			"response": []
+		},
+		{
+			"name": "add school",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Perfect Academy \",\r\n  \"address\": \"Manawar\",\r\n  \"latitude\": 13.1486,\r\n  \"longitude\": 60.9546\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "Content-Length",
-							"value": "291"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 07 Mar 2025 19:16:18 GMT"
-						},
-						{
-							"key": "Etag",
-							"value": "W/\"123-f64yd/nPHdz0lzO8GaP6NgnoBVU\""
-						},
-						{
-							"key": "Server",
-							"value": "railway-edge"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "X-Railway-Edge",
-							"value": "railway/europe-west4-drams3a"
-						},
-						{
-							"key": "X-Railway-Request-Id",
-							"value": "ANW_n0U0SZmN8vRBt9UJMA_2999900906"
-						}
+					}
+				},
+				"url": {
+					"raw": "https://school-management-apis-mpsa.onrender.com/api/addSchool",
+					"protocol": "https",
+					"host": [
+						"school-management-apis-mpsa",
+						"onrender",
+						"com"
 					],
-					"cookie": [],
-					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Macro Vision Academy\",\n        \"address\": \"ABC Road Main St, Burhanpur\",\n        \"latitude\": 17.067,\n        \"longitude\": 75.9977,\n        \"distance\": 364.21818808051114\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Perfect Academy\",\n        \"address\": \"Indore raod Main St, Manawar\",\n        \"latitude\": 11.076,\n        \"longitude\": 65.8777,\n        \"distance\": 1596.8609308333428\n    }\n]"
+					"path": [
+						"api",
+						"addSchool"
+					]
 				}
-			]
+			},
+			"response": []
 		}
 	]
 }
