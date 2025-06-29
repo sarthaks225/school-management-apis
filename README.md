@@ -4,6 +4,17 @@ A Node.js REST API for managing schools, allowing users to add new schools and r
 
 ---
 
+## ⚠️ Important Notice About Live API Endpoints
+
+> **Live API Base URL:** [https://school-management-apis-mpsa.onrender.com/](https://school-management-apis-mpsa.onrender.com/)
+>
+> **Warning:** This API is hosted on Render's free service.  
+> If there is no activity for 50 seconds, the server will go to sleep.  
+> The first request after inactivity may be delayed by up to 30 seconds while the server restarts.  
+> Please be patient and retry your request if you experience a delay.
+
+---
+
 ## Features
 
 - **Add School**: Add a new school with name, address, latitude, and longitude.
